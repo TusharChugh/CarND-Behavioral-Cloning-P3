@@ -111,10 +111,10 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 ####3. Creation of the Training Set & Training Process
 [//]: # (Image References)
 
-[image1]: ./docs/center.png "Car in center. steering angle =0"
-[image2]: ./docs/rightmost.png "Car out of the lane on the right side. High value of steering angle"
-[image3]: ./docs/rightcenter.png "Car just inside the lane on the right side. Medium steering angle"
-[image4]: ./docs/rightcenternear.png "Car near to the center but slightly drifter on the right side. Low steering angle"
+[image1]: ./img/center.png "Car in center. steering angle =0"
+[image2]: ./img/rightmost.png "Car out of the lane on the right side. High value of steering angle"
+[image3]: ./img/rightcenter.png "Car just inside the lane on the right side. Medium steering angle"
+[image4]: ./img/rightcenternear.png "Car near to the center but slightly drifter on the right side. Low steering angle"
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving (one whiaaaaaaaaaale going in clockwise direction and other in the anti-clocwise direction). Here is an example image of center lane driving:
 
