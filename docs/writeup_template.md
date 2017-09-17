@@ -118,7 +118,7 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving (one whiaaaaaaaaaale going in clockwise direction and other in the anti-clocwise direction). Here is an example image of center lane driving:
 
-![center_image] [image1]
+![alt_text] [image1]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to come back to the center of the track. This is helpful while having sharp turns. These images show what a recovery :
 
