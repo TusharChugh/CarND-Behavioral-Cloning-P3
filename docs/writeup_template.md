@@ -109,7 +109,6 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 
 ####3. Creation of the Training Set & Training Process
-[//]: # (Image References)
 
 [image1]: ./img/center.png "Car in center. steering angle =0"
 [image2]: ./img/rightmost.png "Car out of the lane on the right side. High value of steering angle"
@@ -118,7 +117,7 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving (one whiaaaaaaaaaale going in clockwise direction and other in the anti-clocwise direction). Here is an example image of center lane driving:
 
-![alt_text] [image1]
+![alt_text][image1]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to come back to the center of the track. This is helpful while having sharp turns. These images show what a recovery :
 
