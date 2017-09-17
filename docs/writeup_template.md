@@ -109,16 +109,22 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 
 ####3. Creation of the Training Set & Training Process
+[//]: # (Image References)
+
+[image1]: ./docs/center.png "Car in center. steering angle =0"
+[image2]: ./docs/rightmost.png "Car out of the lane on the right side. High value of steering angle"
+[image3]: ./docs/rightcenter.png "Car just inside the lane on the right side. Medium steering angle"
+[image4]: ./docs/rightcenternear.png "Car near to the center but slightly drifter on the right side. Low steering angle"
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving (one whiaaaaaaaaaale going in clockwise direction and other in the anti-clocwise direction). Here is an example image of center lane driving:
 
-![center_image] [.docs/img/center.png?raw=true]
+![center_image] [image1]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to come back to the center of the track. This is helpful while having sharp turns. These images show what a recovery :
 
-![alt text][.docs/img/rightmost.png?raw=true]
-![alt text][.docs/img/rightcenter.png?raw=true]
-![alt text][.docs/img/rightcenternear.png?raw=true]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
 
 I tried to augment the data but made the behavior of the model more unrealible. In addition, as i collected the data for both clockwise and anti-clockwise - I didn't had to add approximations for the other side by flipping the image.
 
