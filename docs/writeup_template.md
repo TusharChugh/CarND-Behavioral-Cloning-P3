@@ -13,7 +13,6 @@ The goals / steps of this project are the following:
 
 
 ## Rubric Points
-###Here I have considered the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ###Files Submitted & Code Quality
@@ -66,25 +65,21 @@ For details about how I created the training data, see the next section.
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
+The overall strategy for deriving a model architecture was to start with simple networks and try to known networks to see how it behaves. 
 
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
+My first step was to use a convolution neural network model similar to the LENET. I thought this model might be appropriate because we are mainly searching for edges in the images as we did with the traffic signs. It didn't work that well. So, I started to make the network more complex by adding more convolution and full connected layers. As the model became bigger I added dropout layers to combat the overfitting (there was high mean squared error on validation set and low mse on train set).
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
+Then I tried NVIDIA's architecture. It worked quite well but I though it can be made simpler as images from simulator are not as complicated as real world. So, I subsampled the images in the first two layers which can also help in speeding up computation with the network.
 
-To combat the overfitting, I modified the model so that ...
+The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track (especially the one after the brdige). To improve the driving behavior in these cases, I recorded and added more data to train the model what to do in these situations.
 
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
-
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
+At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road. Phew!!!
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture consisted of a convolution neural network with the following layers and layer sizes.
 
-Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
+Here is a visualization of the architecture 
 
 | Layer  | Description |
 | ------------- | ------------- |
