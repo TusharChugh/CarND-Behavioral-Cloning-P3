@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 #Load data collected from the simulator
 csv_data_path = "../data/driving_log.csv"
-output_model_file_path= '../results/models/tmodel.h5'
+output_model_file_path= '../results/models/model.h5'
 
 simulator_data = DataLoadHelper(csv_data_path)
 train_generator = simulator_data.load_train_data_from_generator()
